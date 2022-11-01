@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Site</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- jquery link  -->
+    <!-- <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script> -->
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+      .dark-mode{
+        background-color: black;
+        color: white;
+      }
+      .praty{
+        padding: 15px 25px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: grey;
+        color: white;
+      }
+      .praty:hover{
+        background-color: rgb(128, 0, 0);
+        transform: translateY(-5px)
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header>
+      <a href="#home" class="logo"><i class="fas fa-utensils"></i>food</a>
+
+      <div id="menu" class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#popular">popular</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="loginpage.html">Login/Register</a>
+      </nav>
+      <!-- <img src="images/moon.png" id="dark"> -->
+      <button class="praty" onclick="myfunction()">Dark Mode</button>
+      <script>
+        function myfunction(){
+          var element=document.body;
+          element.classList.toggle("dark-mode");
+        }
+      </script>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3> <span id="name">
+          Food Zone :
+        </span>  <span id="love">
+          Taste Of Love ❤️
+        </span>  </h3>
+        <p>
+          The Best Hotel In The Town.<br />
+          “One of the reasons that people enjoy coming to a great restaurant is
+          that when an extraordinary meal is placed in front of them, they feel
+          honored, respected, and even a little bit loved.”
+        </p>
+        <a href="#order" class="btn">order now</a>
+      </div>
+
+      <div class="image">
+        <img src="images/home-img.png" alt="" />
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- popular section starts  -->
+
+    <section class="popular" id="popular">
+      <h1 class="heading">most <span>popular</span> foods</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <span class="price">Rs30 - Rs500 </span>
+          <img src="images/p-1.jpg" alt="" />
+          <h3>Burger</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="#order" class="btn">order now</a>
+        </div>
+        <div class="box">
+          <span class="price"> Rs300 - Rs5000</span>
+          <img src="images/p-2.jpg" alt="" />
+          <h3>Cakes</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="#order" class="btn">order now</a>
+        </div>
+        <div class="box">
+          <span class="price"> Rs100 - Rs2500 </span>
+          <img src="images/p-3.jpg" alt="" />
+          <h3>Sweets</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="#order" class="btn">order now</a>
+        </div>
+        <div class="box">
+          <span class="price"> Rs20 - Rs300 </span>
+          <img src="images/p-4.jpg" alt="" />
+          <h3>CupCakes</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="#order" class="btn">order now</a>
+        </div>
+        <div class="box">
+          <span class="price"> Rs50 - Rs400 </span>
+          <img src="images/p-5.jpg" alt="" />
+          <h3>Shakes</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <a href="#order" class="btn">order now</a>
+        </div>
+        <div class="box">
+          <span class="price"> Rs15 - Rs1000 </span>
+          <img src="images/p-6.jpg" alt="" />
+          <h3>Ice-Cream</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="#order" class="btn">order now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- popular section ends -->
+
+    <!-- steps section starts  -->
+
+    <div class="step-container">
+      <h1 class="heading">How <span>We</span> Work</h1>
+
+      <section class="steps">
+        <div class="box">
+          <img src="images/process 1.jpg" alt="" />
+          <h3>Select Your Favorite Food</h3>
+        </div>
+        <div class="box">
+          <img src="images/process 2.jpg" alt="" />
+          <h3>Free And Fast Delivery</h3>
+        </div>
+        <div class="box">
+          <img src="images/process 3.jpg" alt="" />
+          <h3>Select Your Mode Of Payment</h3>
+        </div>
+        <div class="box">
+          <img src="images/process 4.jpg" alt="" />
+          <h3>Enjoy Your Food</h3>
+        </div>
+      </section>
+    </div>
+
+    <!-- steps section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+      <h1 class="heading">Our <span> Food </span> Gallery</h1>
+
+      <div class="box-container">
+        <a href="https://www.pexels.com/search/burger/"
+          ><div class="box">
+            <img src="images/gallary img-1.jpg" alt="" />
+            <div class="content">
+              <h3>Burger</h3>
+              <p>
+                We Provide Different types of burger such as
+                paneer,cheese,egg,aalo tikki etc.
+              </p>
+            </div>
+          </div></a
+        >
+        <div class="box">
+          <img src="images/gallary img-2.jpg" alt="" />
+          <div class="content">
+            <h3>Sandwich</h3>
+            <p>
+              veg sandwich Chicken Sandwich, Egg Sandwich Seafood Sandwich,
+              Roast Beef Sandwich, Grilled Cheese, Ham Sandwich, Nutella
+              Sandwich, Grilled Chicken Sandwich.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/gallary img-3.jpg" alt="" />
+          <div class="content">
+            <h3>South Indian Dishes</h3>
+            <p>
+              Dosas: paper-thin crepes, Idlis: steamed rice cakes, Vadas:
+              savoury doughnuts, Uttapams: pizza-pancake hybrids, Banana chips:
+              crisps with a twist, Malabar parotta with Kerala-style beef: flat
+              bread .
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/gallary img-4.jpg" alt="" />
+          <div class="content">
+            <h3>Cup Cakes</h3>
+            <p>
+              Coconut Cupcakes with Toasted Coconut Frosting,Dark Chocolate
+              Cupcakes with Peanut Butter Frosting,Guinness, Whiskey and Irish
+              Cream Cupcakes,Homemade Funfetti Cupcakes,Margarita Cupcakes.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/gallary img-5.jpg" alt="" />
+          <div class="content">
+            <h3>sweets</h3>
+            <p>
+              Kheer/ Payasam,Shrikhand,Patishapta with Strawberry Couli,Gajar Ka
+              Halwa,RasmalaiGhevar,jalebi,gulab jamun.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/gallary img-6.jpg" alt="" />
+          <div class="content">
+            <h3>Non-Veg</h3>
+            <p>
+              Butter chicken, North Indian dish.Tandoori chicken, dish from
+              Indian subcontinent.Rogan josh, Kashmiri dish.Machher Jhol,
+              Bengali dish.Biriyani, Mughal dish.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/gallary img-7.jpg" alt="" />
+          <div class="content">
+            <h3>Egg dishes</h3>
+            <p>
+              Sunny-Side Up Fried Eggs.Classic Over-Easy Fried Eggs.Crispy Fried
+              Eggs.Fluffy Scrambled Eggs.Soft-Scrambled Eggs.Foolproof Poached
+              Eggs.Perfect Soft-Boiled Eggs.Classic French Omelette.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/gallary img-8.jpg" alt="" />
+          <div class="content">
+            <h3>Chocolates</h3>
+            <p>
+              White Chocolate. Milk Chocolate. Dark Chocolate. Bittersweet
+              Chocolate. Cocoa Powder. Ruby Chocolate.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/gallary img-9.jpg" alt="" />
+          <div class="content">
+            <h3>Baked Breads</h3>
+            <p>
+              Sourdough.Baguette.Brioche.Focaccia.Ciabatta.Rye
+              Bread.Multigrain.Pita
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+      <h1 class="heading">our customers <span>reviews</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/review img-1.jpeg" alt="" />
+          <h3>Mr.Vikas Thakur</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            “This is always our breakfast stop before heading home from
+            vacation. Always delicious. Always great service. Always worth the
+            stop.”
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/review img-2.jpeg" alt="" />
+          <h3>Mr.Piyush Raj</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p>
+            “The absolute best red sauce. Weather on Pizza or Pasta, it’s
+            honestly delicious. Portions are huge and the staff is extremely
+            friendly and courteous.”
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/review img-3.jpeg" alt="" />
+          <h3>Mr.Vimal Kushwaha</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p>
+            “Very good service, good menu … not overly extensive. Food was very
+            good quality all around. They know how to prepare home fries and
+            their omelets are top-notch. Prices were reasonable.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- order section starts  -->
+
+    <section class="order" id="order">
+      <h1 class="heading"><span>order</span> now</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/order-img.jpg" alt="" />
+        </div>
+
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="E-mail" required />
+          </div>
+
+          <div class="inputBox">
+            <input type="number" placeholder="Quantity" required />
+            <input type="text" placeholder="Food Name" required />
+          </div>
+
+          <textarea
+            placeholder="Address"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <!-- <input type="submit" value="Order now" class="btn" onclick="sub()" /> -->
+          <button class="btn" onclick="sub()">Order Now</button>
+          <script>
+            function sub() {
+              alert("your order has been successfully placed");
+            }
+          </script>
+        </form>
+      </div>
+    </section>
+
+    <!-- order section ends -->
+
+    <!-- footer section  -->
+
+    <section class="footer">
+      <h1 class="credit">Follow Us On</h1>
+      <div class="share">
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+        <a href="#" class="btn">linkedin</a>
+      </div>
+    </section>
+
+    <!-- scroll top button  -->
+    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <!-- loader  -->
+    <!-- <div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div> -->
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+    
+
+     
+  </body>
+</html>

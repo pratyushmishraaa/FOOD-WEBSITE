@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-image: linear-gradient(#000000 10%, #f62e2e 54%);
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.header p {
+  color: #ff8c00;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.header_button {
+  float: right;
+  margin-right: 10px;
+}
+.header_button a {
+  color: #000;
+}
+.form-box {
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.4);
+  /*filter: brightness(100%);*/
+  width: 380px;
+  height: 515px;
+  position: relative;
+  margin: 4% auto;
+  background-color: #ef2323;
+  padding: 5px;
+  overflow: hidden;
+}
+.button-box {
+  width: 230px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+.toggle-btn {
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(to right, #131515, #2b2c2b);
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.social-icons {
+  margin: 30px auto;
+  text-align: center;
+}
+.social-icons a {
+  width: 30px;
+  margin: 0 12px;
+  box-shadow: 0 0 20px 0 #7f7f7f3d;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #131515;
+}
+.social-icons a:hover {
+  background-color: #fff;
+}
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999999;
+  outline: none;
+  background: transparent;
+}
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #4a4d4d, #757875);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color: white;
+}
+
+.chech-box {
+  margin: 30px 10px 30px 0;
+}
+span {
+  color: #000;
+  font-size: 12px;
+  bottom: 65px;
+  position: absolute;
+}
+.input-group input {
+  border-bottom: solid 1px #000;
+
+  /*line-height: 50px;*/
+}
+.forget {
+  margin-top: 70px;
+}
+#User {
+  width: 100%;
+  padding: 10px 0px;
+  line-height: 10px;
+  margin: 20px 0;
+  background: #ef2323;
+  /* background-color: #339989; */
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+#login {
+  margin-top: -28px;
+  left: 50px;
+}
+#register {
+  margin-top: -28px;
+  left: 450px;
+}
+::placeholder {
+  color: #000000;
+}
